@@ -1,0 +1,11 @@
+--- a/Makefile
++++ b/Makefile
+@@ -146,7 +146,7 @@
+  -DNO_WORKING_ISPRINT
+ UNZIP_VERSION := 6.0
+ UNZIP_DEBIAN_REVISION := 29
+-UNZIP_BASE_URL := https://deb.debian.org/debian/pool/main/u/unzip
++UNZIP_BASE_URL := https://snapshot.debian.org/archive/debian/20260101T000000Z/pool/main/u/unzip
+ UNZIP_ORIG_TARBALL := unzip_$(UNZIP_VERSION).orig.tar.gz
+ UNZIP_DEBIAN_TARBALL := unzip_$(UNZIP_VERSION)-$(UNZIP_DEBIAN_REVISION).debian.tar.xz
+ UNZIP_DOWNLOAD_DIR := $(OBJDIR)/downloads/unzip
