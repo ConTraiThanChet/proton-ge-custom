@@ -499,6 +499,10 @@ apply_all_in_dir() {
     echo "WINE: -HOTFIX- Add Bluetooth LE GATT and WinRT BLE support"
     apply_all_in_dir "../patches/wine-hotfixes/bluetooth-le/"
 
+    # Videos rendered into DirectComposition swapchains (NetEase CC player in Justice Mobile / nshm.exe)
+    echo "WINE: -HOTFIX- dcomp: show composition swapchains in their host window"
+    apply_all_in_dir "../patches/wine-hotfixes/dcomp-mirror/"
+
     echo "WINE: RUN AUTOCONF TOOLS/MAKE_REQUESTS"
     autoreconf -f
     ./tools/make_requests
